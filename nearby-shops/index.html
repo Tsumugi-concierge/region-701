@@ -48,6 +48,61 @@ body{font-family:'Nunito',sans-serif;background:var(--cream);color:var(--text-da
     color: var(--text-dark);
     letter-spacing: 0.03em;
   }
+
+  .resto-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 12px rgba(120,80,60,0.08);
+  }
+  .resto-card .resto-name {
+    font-size: 1rem;
+    font-weight: 900;
+    color: var(--text-dark);
+    margin-bottom: 6px;
+  }
+  .resto-card .resto-desc {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--text-mid);
+    margin-bottom: 8px;
+  }
+  .resto-card .resto-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .resto-card .resto-walk {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: var(--text-mid);
+  }
+  .resto-card .map-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 14px;
+    border-radius: 50px;
+    font-size: 0.78rem;
+    font-weight: 800;
+    transition: opacity 0.2s;
+  }
+  .resto-card .map-btn:hover { opacity: 0.85; }
+  .section-heading {
+    font-size: 1.05rem;
+    font-weight: 900;
+    color: var(--text-dark);
+    margin: 24px 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
 </style>
 </head>
 <body>
@@ -75,6 +130,73 @@ body{font-family:'Nunito',sans-serif;background:var(--cream);color:var(--text-da
     <li data-i18n="shop3">💊 Pharmacy — Mon–Fri 8AM–10PM / Sat–Sun 10AM–10PM (4 min walk)</li>
   </ul>
   <p style="font-size:0.8rem;margin-top:8px;color:var(--text-mid)" data-i18n="shopsNote">※ Opening hours may change. Please check before you go.</p>
+</div>
+
+  
+<div class="section-heading" data-i18n="foodTitle">🍴 Recommended Restaurants</div>
+<p class="info-card" style="margin-bottom:16px" data-i18n="foodIntro">We hope you're enjoying your stay! Here are some of our local restaurant recommendations nearby. All spots are real and easy to find on Google Maps!</p>
+
+<div class="resto-card">
+  <div class="resto-name">🍜 創作麺工房 鳴龍 (Nakiryu)</div>
+  <div class="resto-desc" data-i18n="r1desc">A Michelin Bib Gourmand ramen shop famous for its rich dan dan noodles.</div>
+  <div class="resto-footer">
+    <span class="resto-walk" data-i18n="r1walk">🚶 ~9 min walk</span>
+    <a class="map-btn" href="https://maps.app.goo.gl/WVBjNWxTcHKUfHWV8" target="_blank">🗺 Google Maps</a>
+  </div>
+</div>
+
+<div class="resto-card">
+  <div class="resto-name">🍜 らぁめん子うさぎ (Ko-usagi)</div>
+  <div class="resto-desc" data-i18n="r2desc">A cozy local ramen shop loved by residents. Well-balanced and approachable.</div>
+  <div class="resto-footer">
+    <span class="resto-walk" data-i18n="r2walk">🚶 ~7 min walk</span>
+    <a class="map-btn" href="https://maps.app.goo.gl/nQmdw5Br9cTRQNp7A" target="_blank">🗺 Google Maps</a>
+  </div>
+</div>
+
+<div class="resto-card">
+  <div class="resto-name">🍣 天下寿司 大塚店 (Tenka Sushi)</div>
+  <div class="resto-desc" data-i18n="r3desc">A casual conveyor belt sushi spot right near Otsuka Station. Great for first-time visitors to Japan.</div>
+  <div class="resto-footer">
+    <span class="resto-walk" data-i18n="r3walk">🚶 ~4 min walk</span>
+    <a class="map-btn" href="https://maps.app.goo.gl/CSxd9Yc1m8cXshnL9" target="_blank">🗺 Google Maps</a>
+  </div>
+</div>
+
+<div class="resto-card">
+  <div class="resto-name">🍶 大塚のれん街 (Otsuka Norengai)</div>
+  <div class="resto-desc" data-i18n="r4desc">A lively alley packed with small restaurants and bars — perfect for exploring.</div>
+  <div class="resto-footer">
+    <span class="resto-walk" data-i18n="r4walk">🚶 ~5 min walk</span>
+    <a class="map-btn" href="https://maps.app.goo.gl/pE5P45L822HVzyJc8" target="_blank">🗺 Google Maps</a>
+  </div>
+</div>
+
+<div class="resto-card">
+  <div class="resto-name">☕ eightdays dining</div>
+  <div class="resto-desc" data-i18n="r5desc">A stylish café with great coffee and desserts.</div>
+  <div class="resto-footer">
+    <span class="resto-walk" data-i18n="r5walk">🚶 ~5 min walk</span>
+    <a class="map-btn" href="https://maps.app.goo.gl/U9cCkkQMDLVsMKyY9" target="_blank">🗺 Google Maps</a>
+  </div>
+</div>
+
+<div class="resto-card">
+  <div class="resto-name">🥩 東京苑 大塚本店 (Tokyo-en)</div>
+  <div class="resto-desc" data-i18n="r6desc">High-quality Japanese BBQ (yakiniku) popular with locals.</div>
+  <div class="resto-footer">
+    <span class="resto-walk" data-i18n="r6walk">🚶 ~5 min walk</span>
+    <a class="map-btn" href="https://maps.app.goo.gl/53NLtY3N6Rjjvd6YA" target="_blank">🗺 Google Maps</a>
+  </div>
+</div>
+
+<div class="resto-card">
+  <div class="resto-name">🍺 Smoke Beer Factory Otsuka</div>
+  <div class="resto-desc" data-i18n="r7desc">A craft beer bar serving smoked food — a great spot for a relaxed evening.</div>
+  <div class="resto-footer">
+    <span class="resto-walk" data-i18n="r7walk">🚶 ~5 min walk</span>
+    <a class="map-btn" href="https://maps.app.goo.gl/esUjKGbmfcbhQFCp6" target="_blank">🗺 Google Maps</a>
+  </div>
 </div>
 
   <div class="back-footer">
