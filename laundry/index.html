@@ -89,7 +89,14 @@ body{font-family:'Nunito',sans-serif;background:var(--cream);color:var(--text-da
 </div>
 </div>
 <script>
-const S={'en':{pageTitle:'Laundry',backToMenu:'← Back to Menu'}, 'ja':{pageTitle:'洗濯',backToMenu:'← メニューへ戻る'}, 'zh':{pageTitle:'洗衣',backToMenu:'← 返回菜单'}, 'ko':{pageTitle:'세탁',backToMenu:'← 메뉴로 돌아가기'}, 'fr':{pageTitle:'Laverie',backToMenu:'← Retour au menu'}, 'es':{pageTitle:'Lavandería',backToMenu:'← Volver al menú'}};
+const S={
+  en:{pageTitle:'Laundry',backToMenu:'← Back to Menu',laundryTip:'💧 Detergent, fabric softener, and laundry nets are stored near the washing machine — feel free to use them!',laundryHow:'How to use the washing machine',step1:'① Press ON/OFF to turn on',step2:'② Select mode: Wash→Dry / Wash only / Dry only',step3:'③ Select course: Regular or Quick',step4:'④ Put detergent in the RIGHT slot, softener in the LEFT slot',step5:'⑤ Press START/STOP to begin'},
+  ja:{pageTitle:'洗濯',backToMenu:'← メニューへ戻る',laundryTip:'💧 洗剤・柔軟剤・ランドリーネットは洗濯機そばにあります。ご自由にお使いください。',laundryHow:'洗濯機の使い方',step1:'① ON/OFFを押して電源オン',step2:'② モード選択：洗濯→乾燥／洗濯のみ／乾燥のみ',step3:'③ コース選択：標準 または 速洗',step4:'④ 右の投入口に洗剤、左の投入口に柔軟剤',step5:'⑤ START/STOPを押して開始'},
+  zh:{pageTitle:'洗衣',backToMenu:'← 返回菜单',laundryTip:'💧 洗衣液、柔顺剂和洗衣网放在洗衣机旁，可自由使用。',laundryHow:'洗衣机使用方法',step1:'① 按 ON/OFF 开机',step2:'② 选择模式：洗→烘 / 仅洗 / 仅烘',step3:'③ 选择程序：标准 或 快速',step4:'④ 右槽放洗衣液，左槽放柔顺剂',step5:'⑤ 按 START/STOP 开始'},
+  ko:{pageTitle:'세탁',backToMenu:'← 메뉴로 돌아가기',laundryTip:'💧 세제, 섬유유연제, 세탁망은 세탁기 옆에 있습니다. 자유롭게 사용하세요.',laundryHow:'세탁기 사용 방법',step1:'① ON/OFF를 눌러 전원 켜기',step2:'② 모드 선택: 세탁→건조 / 세탁만 / 건조만',step3:'③ 코스 선택: 표준 또는 급속',step4:'④ 오른쪽 투입구에 세제, 왼쪽 투입구에 유연제',step5:'⑤ START/STOP을 눌러 시작'},
+  fr:{pageTitle:'Laverie',backToMenu:'← Retour au menu',laundryTip:'💧 Lessive, adoucissant et filets à linge sont près de la machine — servez‑vous !',laundryHow:'Utiliser le lave‑linge',step1:'① Appuyez sur ON/OFF',step2:'② Choisissez le mode : Laver→Sécher / Laver seul / Sécher seul',step3:'③ Choisissez le programme : Standard ou Rapide',step4:'④ Détergent à DROITE, adoucissant à GAUCHE',step5:'⑤ Appuyez sur START/STOP pour démarrer'},
+  es:{pageTitle:'Lavandería',backToMenu:'← Volver al menú',laundryTip:'💧 Detergente, suavizante y redes están junto a la lavadora — úselos libremente.',laundryHow:'Cómo usar la lavadora',step1:'① Pulse ON/OFF para encender',step2:'② Seleccione modo: Lavar→Secar / Solo lavar / Solo secar',step3:'③ Seleccione programa: Normal o Rápido',step4:'④ Detergente en la ranura DERECHA, suavizante en la IZQUIERDA',step5:'⑤ Pulse START/STOP para iniciar'}
+};
 </script>
   <script src="../assets/i18n.js" defer></script>
   <script src="../assets/cute-pack.js" defer></script>

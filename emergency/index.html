@@ -90,7 +90,56 @@ body{font-family:'Nunito',sans-serif;background:var(--cream);color:var(--text-da
 </div>
 </div>
 <script>
-const S={'en':{pageTitle:'Emergency',backToMenu:'← Back to Menu'}, 'ja':{pageTitle:'緊急連絡先',backToMenu:'← メニューへ戻る'}, 'zh':{pageTitle:'紧急联系',backToMenu:'← 返回菜单'}, 'ko':{pageTitle:'긴급 연락처',backToMenu:'← 메뉴로 돌아가기'}, 'fr':{pageTitle:'Urgences',backToMenu:'← Retour au menu'}, 'es':{pageTitle:'Emergencias',backToMenu:'← Volver al menú'}};
+const S={
+  en:{
+    pageTitle:'Emergency', backToMenu:'← Back to Menu',
+    emergTitle:'🚨 Emergency Contacts', emergPolice:'Police', emergFire:'Fire / Ambulance',
+    emergEngPolice:'🗣 Tokyo English-speaking Police (Weekdays 8:30–17:15)',
+    emergAmbulance:'🌐 Ambulance Interpretation (EN/ES/ZH/KO/TH) Weekdays 17:00–22:00 / Weekends 9:00–22:00',
+    emergHelpline:'🆘 Japan Help Line — 24h English assistance',
+    emergAddress:'📍 Your address: #701, Region Otsuka, 3-38-3 Minami-Otsuka, Toshima, Tokyo',
+  },
+  ja:{
+    pageTitle:'緊急連絡先', backToMenu:'← メニューへ戻る',
+    emergTitle:'🚨 緊急連絡先', emergPolice:'警察', emergFire:'消防／救急',
+    emergEngPolice:'🗣 英語対応 警視庁（平日 8:30–17:15）',
+    emergAmbulance:'🌐 救急通訳（英/西/中/韓/タイ）平日17:00–22:00／土日9:00–22:00',
+    emergHelpline:'🆘 Japan Help Line（英語24時間対応）',
+    emergAddress:'📍 住所：〒170-0005 東京都豊島区南大塚3-38-3 レジオン大塚701',
+  },
+  zh:{
+    pageTitle:'紧急联系', backToMenu:'← 返回菜单',
+    emergTitle:'🚨 紧急联系方式', emergPolice:'警察', emergFire:'消防／救护',
+    emergEngPolice:'🗣 东京英语警务咨询（工作日 8:30–17:15）',
+    emergAmbulance:'🌐 救护口译（英/西/中/韩/泰）工作日17:00–22:00／周末9:00–22:00',
+    emergHelpline:'🆘 日本求助热线（英语24小时）',
+    emergAddress:'📍 地址：东京都丰岛区南大冢3-38-3 Region Otsuka 701（邮编170-0005）',
+  },
+  ko:{
+    pageTitle:'긴급 연락처', backToMenu:'← 메뉴로 돌아가기',
+    emergTitle:'🚨 긴급 연락처', emergPolice:'경찰', emergFire:'소방 / 구급',
+    emergEngPolice:'🗣 도쿄 영어 경찰 안내(평일 8:30–17:15)',
+    emergAmbulance:'🌐 구급 통역(영/스/중/한/태) 평일 17:00–22:00 / 주말 9:00–22:00',
+    emergHelpline:'🆘 재팬 헬프라인(영어 24시간)',
+    emergAddress:'📍 주소: 도쿄도 도시마구 미나미오쓰카 3-38-3 레지온 오쓰카 701 (170-0005)',
+  },
+  fr:{
+    pageTitle:'Urgences', backToMenu:'← Retour au menu',
+    emergTitle:'🚨 Numéros d’urgence', emergPolice:'Police', emergFire:'Pompiers / Ambulance',
+    emergEngPolice:'🗣 Police anglophone de Tokyo (Lun–Ven 8:30–17:15)',
+    emergAmbulance:'🌐 Interprétation ambulance (EN/ES/ZH/KO/TH) Lun–Ven 17:00–22:00 / Week-end 9:00–22:00',
+    emergHelpline:'🆘 Japan Help Line — assistance 24h en anglais',
+    emergAddress:'📍 Adresse : #701, Region Otsuka, 3-38-3 Minami-Otsuka, Toshima, Tokyo',
+  },
+  es:{
+    pageTitle:'Emergencias', backToMenu:'← Volver al menú',
+    emergTitle:'🚨 Contactos de emergencia', emergPolice:'Policía', emergFire:'Bomberos / Ambulancia',
+    emergEngPolice:'🗣 Policía de Tokio con atención en inglés (L–V 8:30–17:15)',
+    emergAmbulance:'🌐 Interpretación para ambulancias (EN/ES/ZH/KO/TH) L–V 17:00–22:00 / Fines 9:00–22:00',
+    emergHelpline:'🆘 Japan Help Line — asistencia 24h en inglés',
+    emergAddress:'📍 Dirección: #701, Region Otsuka, 3-38-3 Minami-Otsuka, Toshima, Tokio',
+  }
+};
 </script>
   <script src="../assets/i18n.js" defer></script>
   <script src="../assets/cute-pack.js" defer></script>
