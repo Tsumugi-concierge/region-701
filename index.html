@@ -572,7 +572,7 @@
                 const res = await fetch(CONFIG.workerUrl, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ messages: history, lang: currentLang, sheetId: CONFIG.sheetId, gids: CONFIG.gids }),
+                    body: JSON.stringify({ messages: history, lang: window.getCurrentLang(), sheetId: CONFIG.sheetId, gids: CONFIG.gids }),
                 });
                 const data = await res.json();
                 if (!res.ok) { typing.remove(); addMsg(`Error ${res.status}: ${data.error?.message || 'Unknown error'}`, 'bot'); return; }
@@ -595,7 +595,7 @@
 
         function askChip(btn) {
             const key = btn.getAttribute('data-chip');
-            const q = LANG_DATA[currentLang]?.[key] || btn.textContent;
+            const q = LANG_DATA[window.getCurrentLang()]?.[key] || btn.textContent;
             sendMessage(q);
         }
 
